@@ -5,6 +5,7 @@ MAINTAINER bhaas@broadinstitute.org
 RUN apt-get update && apt-get install -y gcc g++ perl python3 automake make \
                                        wget curl libdb-dev \
 				       bzip2 zlibc zlib1g zlib1g-dev  default-jre \
+				       vim less screen tree bsdmainutils \
                        python-setuptools python-dev build-essential \
 				       unzip libbz2-dev  liblzma-dev && \
     apt-get clean
@@ -133,7 +134,7 @@ ENV STARF_CHECKOUT=c465cf33d111121f6be127483379bebd2f866fbd
 
 RUN apt-get update && apt-get install -y git
 
-RUN git clone https://github.com/STAR-Fusion/STAR-Fusion.git && \
+RUN git clone https://github.com/jfx319/STAR-Fusion.git && \
      cd STAR-Fusion && \
      git checkout $STARF_CHECKOUT && \
      git submodule init && git submodule update && \
