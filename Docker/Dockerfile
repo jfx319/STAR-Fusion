@@ -129,8 +129,8 @@ RUN locale-gen en_US.UTF-8
 WORKDIR $SRC
 
 ENV STAR_FUSION_VERSION=1.6.0
-ENV STARF_CHECKOUT=58d9080389685adc7d251c00c5085c946c5c828c
-
+#ENV STARF_CHECKOUT=58d9080389685adc7d251c00c5085c946c5c828c
+#Great for reproducibility in a versioned release; but default to pulling the latest (so not need to specify a commit). 
 
 RUN apt-get update && apt-get install -y git
 
