@@ -802,6 +802,7 @@ sub run_STAR {
         . " --runThreadN $CPU"
         . $maybe_tmpdir
         . " --limitOutSJcollapsed 3000000 " # fatal error: buffer size for SJ output was too small at 1000000
+        . " --limitSjdbInsertNsj 3000000 " # fatal error: the number of junctions to be inserted on the fly =1713038 is larger than the limitSjdbInsertNsj=1000000
         . " --outSAMstrandField intronMotif "
         . " --outSAMunmapped Within ";
     
