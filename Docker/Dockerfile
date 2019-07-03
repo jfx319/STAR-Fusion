@@ -136,7 +136,7 @@ RUN apt-get update && apt-get install -y git
 
 RUN git clone https://github.com/jfx319/STAR-Fusion.git && \
      cd STAR-Fusion && \
-     git checkout $STARF_CHECKOUT && \
+     #git checkout $STARF_CHECKOUT && \
      git submodule init && git submodule update && \
      cd FusionInspector && \
      git submodule init && git submodule update
