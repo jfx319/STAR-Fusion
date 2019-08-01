@@ -20,7 +20,7 @@ RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && \
     python get-pip.py
 
 
-RUN pip install numpy requests igv-reports
+RUN pip install numpy requests pysam==0.15.2 igv-reports
 
 
 RUN curl -L https://cpanmin.us | perl - App::cpanminus
