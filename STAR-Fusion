@@ -702,8 +702,6 @@ main: {
                 . " --max_promiscuity $MAX_PROMISCUITY "
                 . " --out_dir $FI_outdir "
                 . " --genome_lib_dir $genome_lib_dir "
-                . " --limitOutSJcollapsed 3000000 " # fatal error: buffer size for SJ output was too small at 1000000
-                . " --limitSjdbInsertNsj 3000000 " #Fatal LIMIT error: the number of junctions to be inserted on the fly =1682795 is larger than the limitSjdbInsertNsj=1000000
                 .  " --CPU $CPU ";
         
         if ($FUSIONINSPECTOR_MODE eq 'inspect') {
